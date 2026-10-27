@@ -1,0 +1,27 @@
+Probabilistic SMS Spam Detection - Results
+
+Messages after cleaning: 5171 (spam 653, ham 4518)
+P(Spam) = 0.1263, P(Ham) = 0.8737
+E(Y) = 0.1263, Var(Y) = 0.1103
+
+  word  messages with word  spam with word  P(W|Spam)   P(W)  P(Spam|W) direct  P(Spam|W) Bayes
+  free                 203             148     0.2266 0.0393            0.7291           0.7291
+ prize                  73              73     0.1118 0.0141            1.0000           1.0000
+   win                  55              49     0.0750 0.0106            0.8909           0.8909
+urgent                  62              57     0.0873 0.0120            0.9194           0.9194
+ offer                  30              24     0.0368 0.0058            0.8000           0.8000
+
+Accuracy: 0.9807
+
+              precision    recall  f1-score   support
+
+         Ham     0.9846    0.9934    0.9890       904
+        Spam     0.9512    0.8931    0.9213       131
+
+    accuracy                         0.9807      1035
+   macro avg     0.9679    0.9432    0.9551      1035
+weighted avg     0.9804    0.9807    0.9804      1035
+
+Confusion matrix [[TN, FP], [FN, TP]]:
+[[898   6]
+ [ 14 117]]
